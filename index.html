@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn-style {
+            
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body style="background-color: black">
+
+
+
+    
+    
+    <div style="justify-items: center;background-color: gray;justify-content: center;max-width: 500px;margin:auto;border-radius: 50px;" >
+       
+      <h1 style="padding-top:30px"> ADMISSION FORM </h1>
+       
+
+        <form onsubmit="showAlert()">
+
+            <label for="name">
+            Name 
+            </label>
+            <input type="text" placeholder="Enter Your Name">
+            <br>
+            </br>
+            <label for="Father Name fname"></label>
+            Father Name <input type="text" placeholder="Enter Your Father Name">
+            <br>
+            <br>
+            <label for="P Number"></label>
+            Phone number <input type="number" name="phone number" id="p number" placeholder="Enter Your Pone Number">
+            <br>
+            <br>
+
+            <label for="Address"></label>
+            Address <input type="text" placeholder="Enter Your Address">
+            <br>
+            <br>
+            <label for="City"></label>
+            City <input type="text" placeholder="Enter your City">
+            <br>
+            <br>
+                 <label for="class name" C NAME></label>
+            Class Name <input type="text" placeholder="Enter Class">
+            <br>
+            <br>
+            <label for="roll number" r number></label>
+            Roll number <input type="text" placeholder="Enter your roll number">
+            <br>
+            <br>
+            State <input type="text" placeholder="Enter State">
+            <br>
+            <br>
+            <labrl for="Email Address"></labrl>
+            Email <input type="text" placeholder="xyz@gmail.com">
+            <br>
+            <br>
+            <labrl for="Date of birth dtf"></labrl>
+            Date of Birth <input type="date" name="date of birth" id="dtf" placeholder="date / month / Year">
+            <br>
+            <br>
+            Gander male<input type="radio" name="gender">
+            Female<input type="radio" name="gender">
+            <br>
+            <br>
+
+            <div style="margin-bottom: 10px;">
+
+
+                <label for="subject">subject</label>
+                <select name="class subject" id="subject" style="height: 20px;">
+                    <option value="none">None</option>
+                    <option value="chemisty">Chem</option>
+                    <option value="biology">Bio</option>
+                    <option value="physics">Phy</option>
+                    <option value="mathematic">Math</option>
+                </select>
+            </div>
+
+
+            <div style="display: flex;align-items: center;">
+                <label for="comment">Comment:</label>
+
+                <!-- <extarea name="your comment" id="comment">sdfsd</extarea> -->
+                <!-- </textarea> -->
+
+                <textarea rows="1" colr="1" placeholder="Type Here...."></textarea>
+            </div>
+            <br>
+
+           <input type="submit" value="submit" class="btn-style">
+            <input type="reset" value="reset" class="btn-style">
+            <br>
+            <br>
+
+
+
+        
+
+
+        </form>
+
+    </div>
+
+</body>
+<script>
+
+    function showAlert (){
+        alert('Thanks for submitting the form')
+    }
+</script>
+</html>
+
