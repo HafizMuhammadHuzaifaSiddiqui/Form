@@ -3,39 +3,33 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .btn-style {
-            
-            padding: 10px;
-            background-color: black;
-            color: white;
-            border-radius: 5px;
-        }
-    </style>
+
 </head>
 
-<body style="background-color: black">
+<body style="background-color:rgba(0, 0, 0, 0.952)">
 
 
 
-    
-    
-    <div style="justify-items: center;background-color: gray;justify-content: center;max-width: 500px;margin:auto;border-radius: 50px;" >
-       
-      <h1 style="padding-top:30px"> ADMISSION FORM </h1>
-       
+
+
+    <div
+        style="justify-items: center;background-color: gray;justify-content: center;max-width: 500px;margin:auto;border-radius: 50px;">
+
+        <h1 style="padding-top:30px"> ADMISSION FORM </h1>
+
 
         <form onsubmit="showAlert()">
 
             <label for="name">
-            Name 
+                Name
             </label>
             <input type="text" placeholder="Enter Your Name">
             <br>
             </br>
-            <label for="Father Name fname"></label>
+
             Father Name <input type="text" placeholder="Enter Your Father Name">
             <br>
             <br>
@@ -52,7 +46,7 @@
             City <input type="text" placeholder="Enter your City">
             <br>
             <br>
-                 <label for="class name" C NAME></label>
+            <label for="class name" C NAME></label>
             Class Name <input type="text" placeholder="Enter Class">
             <br>
             <br>
@@ -65,6 +59,18 @@
             <br>
             <labrl for="Email Address"></labrl>
             Email <input type="text" placeholder="xyz@gmail.com">
+            <br>
+            <br>
+
+
+            <div style="position: absolute;">
+                            <label for="Password">Password </label>
+                <input type="password" id="pass" placeholder="Enter your password"><span id="hide"
+                    style="display: none;cursor:pointer;" onclick="hide()"> </span>
+                <div onclick="toggle()" id="eye" style="cursor: pointer;color:white;position:relative;top:-20px;right:-220px;user-select: none;">👁️
+                </div>
+            </div>
+          
             <br>
             <br>
             <labrl for="Date of birth dtf"></labrl>
@@ -99,15 +105,15 @@
                 <textarea rows="1" colr="1" placeholder="Type Here...."></textarea>
             </div>
             <br>
-
-           <input type="submit" value="submit" class="btn-style">
+             <br>
+            <input type="submit" value="submit" class="btn-style">
             <input type="reset" value="reset" class="btn-style">
             <br>
             <br>
 
 
 
-        
+
 
 
         </form>
@@ -117,9 +123,21 @@
 </body>
 <script>
 
-    function showAlert (){
+    function showAlert() {
         alert('Thanks for submitting the form')
     }
-</script>
-</html>
 
+    const pass = document.getElementById('pass')
+    const eye = document.getElementById('eye')
+
+    function toggle() {
+
+        //updating type to text from password in pass id
+        pass.type = pass.type === 'password' ? 'text' : 'password';
+        eye.innerText = pass.type === 'password' ? '👁️' : '🫣';
+
+
+    }
+</script>
+
+</html>
